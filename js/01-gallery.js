@@ -41,10 +41,8 @@ function onClick(evt) {
   );
     instance.show()
 
-    document.addEventListener("keydown", closeEsc)
     function closeEsc(evt) {
         if (evt.key === 'Escape') {
-            document.removeEventListener("keydown", closeEsc);
             instance.close();
         }
     }
